@@ -1,0 +1,46 @@
+body {
+    overflow-x: hidden;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#wrapper #sidebar-wrapper.toggled {
+    margin-left: -75%;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: 0;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 100%;
+}
+
+#page-content-wrapper {
+    width: 100%;
+}
+
+#wrapper #page-content-wrapper {
+    margin-left: 25%;
+    transition: margin .25s ease-out;
+}
+
+#wrapper #sidebar-wrapper.toggled #page-content-wrapper {
+    margin-left: 0;
+}
+
+#sidebar-wrapper .sidebar-toggle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
