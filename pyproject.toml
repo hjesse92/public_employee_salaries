@@ -1,21 +1,20 @@
 [tool.poetry]
-name = "public-employee-salaries-viz"
+name = "public-employee-salaries-209-project"
 version = "0.1.0"
 description = ""
 authors = ["Jesse He <hjesse92@gmail.com>"]
 readme = "README.md"
+packages = [{include = "public_employee_salaries_209_project"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-Django = "^4.2.1"
-djangorestframework = "^3.14.0"
-celery = "^5.3.0"
-redis = "^4.5.5"
+flask = "^2.3.2"
+
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.3.1"
-black = "^23.3.0"
+black = "^23.7.0"
 isort = "^5.12.0"
+pytest = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
