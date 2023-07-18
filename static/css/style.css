@@ -1,22 +1,35 @@
 body {
   margin: 0px;
+  height: 1100px;
+  background-color: #eff2f6;
+  position: relative;
+}
+
+p {
+  margin: 0px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .headerContainer {
-  border-bottom: 1px lightgray solid;
+  border: 1px #cbd0dd solid;
   display: flex;
-  align-items: center; /* NOT WORKING */
-  padding: 0 20px;
-  background-color: #fafafa;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  background-color: white;
 }
 
-.headerCenter {
+.headerLeft {
+  /* border: 1px blue solid; */
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .headerImg {
   width: 27px;
   height: 27px;
+  margin-left: 25px;
 }
 
 .headerTitle {
@@ -26,5 +39,95 @@ body {
   line-height: 1.2;
   font-weight: 600;
   letter-spacing: -0.04em;
-  margin-bottom: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 5px;
+}
+
+.sidebarContainer {
+  border: 1px #cbd0dd solid;
+  width: 60px;
+  height: 100%;
+  z-index: 100;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.sidebar-link {
+  width: 100%;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar-link img {
+  height: 16px;
+}
+
+.line {
+  width: 55%;
+  border: .5px rgb(234, 234, 234) solid;
+  margin-top: 18px;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(235, 235, 235);
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 70%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contentContainer {
+  /* border: 1px blue solid; */
+  margin-left: 62px;
+  margin-top: 65.41px;
+  position: absolute;
+  top: 0;
+  width: 96%;
+  height: 100%;
+}
+
+.contentArea {
+  margin: 62px 40px 0px 40px;
+}
+
+.contentTitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  margin: 0px 0px 32px;
+  font-size: 28px;
+}
+
+.contentMid {
+  /* border: 1px red solid; */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contentLeft {
+  border: 1px blue solid;
+  height: 507px;
+  width: 507px;
+}
+
+.contentImg {
+  object-fit: cover;
+  object-position: center;
+}
+
+.contentRight {
+  border: 1px pink solid;
+  position: absolute;
+  height: 100vh;
+  width: 732.66px;
+  right: 0;
+  top: -25px;
 }

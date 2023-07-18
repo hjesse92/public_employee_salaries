@@ -1,37 +1,137 @@
-<html>
-<title>California Public Employee Salaries</title>
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>California Public Employee Salaries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
-    <header class="sticky">
-        <div class="container">
-            <h1>California Public Employee - Department</h1>
+    <!-- Header -->
+    <div class="headerContainer">
+
+        <div class="headerLeft">
+            <img class="headerImg"
+                src="{{url_for('static', filename='images/Seal_of_University_of_California,_Berkeley.svg.png')}}"
+                alt="img">
         </div>
 
+        <div class="headerTitle">
+            <p>Public Employee Salaries</p>
+        </div>
+
+        <div class="light/darkModes">
+
+        </div>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebarContainer">
+
+        <a href="home">
+            <div class="sidebar-link">
+                <img src="" alt="Home">
+                <!-- <div>Title</div> -->
+            </div>
+        </a>
+
+        <a href="about-us">
+            <div class="sidebar-link">
+                <img src="{{url_for('static', filename='images/Feather-core-pie-chart.svg')}}" alt="about-us">
+                <!-- <div>Home</div> -->
+            </div>
+        </a>
+
+        <div class="line"></div>
+
+        <a href="overtime-pay">
+            <div class="sidebar-link">
+                <img src="" alt="Overtime Pay">
+                <!-- <div>Title</div> -->
+            </div>
+        </a>
+
+
+
+        <a href="department-job">
+            <div class="sidebar-link">
+                <img src="" alt="Department Job">
+                <!-- <div>Title</div> -->
+            </div>
+        </a>
+
+        <a href="city-comparison-dashboard">
+            <div class="sidebar-link">
+                <img src="" alt="City Comparison Dashboard">
+                <!-- <div>Title</div> -->
+            </div>
+        </a>
+
+        <div class="line"></div>
+
+        <div class="sidebar-link">
+            <img src="" alt="">
+            <!-- <div>Title</div> -->
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="contentContainer">
+        <div class="contentArea">
+
+            <div class="contentTop">
+                <p class="contentTitle">Department Job</p>
+            </div>
+
+            <div class="contentMid">
+
         <div class='tableauPlaceholder' id='viz1689640979947' style='position: relative'><noscript><a href='#'><img
-                        alt='Story 2 '
-                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_CityComparison_User&#47;Story2&#47;1_rss.png'
-                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='w209_CityComparison_User&#47;Story2' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_CityComparison_User&#47;Story2&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-            </object></div>
-        <script
-            type='text/javascript'>                    var divElement = document.getElementById('viz1689640979947'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1016px'; vizElement.style.height = '991px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            alt='Story 2 '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_CityComparison_User&#47;Story2&#47;1_rss.png'
+            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+    <param name='embed_code_version' value='3' />
+    <param name='site_root' value='' />
+    <param name='name' value='w209_CityComparison_User&#47;Story2' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_CityComparison_User&#47;Story2&#47;1.png' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='en-US' />
+</object></div>
+<script
+type='text/javascript'>                    var divElement = document.getElementById('viz1689640979947'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1016px'; vizElement.style.height = '991px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; W209 Group 2</p>
+        </div>
+    </footer>
+
+    </script>
+
+
 </body>
 
 </html>
