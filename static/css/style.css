@@ -1,21 +1,30 @@
 body {
-  font-family: sans-serif;
-  font-size: 16px;
+  margin: 0px;
 }
 
-h1 {
-  font-size: 24px;
+.headerContainer {
+  border-bottom: 1px lightgray solid;
+  display: flex;
+  align-items: center; /* NOT WORKING */
+  padding: 0 20px;
+  background-color: #fafafa;
 }
 
-p {
-  margin-bottom: 10px;
+.headerCenter {
+  display: flex;
 }
 
-.container {
-  width: 960px;
-  margin: 0 auto;
+.headerImg {
+  width: 27px;
+  height: 27px;
 }
-.nav-title {
-    font-weight: bold;
-    color: #000; /* Change to the color you want for your title */
+
+.headerTitle {
+  font-size: 1.63625rem;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #6e7891;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 0;
 }
