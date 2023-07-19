@@ -1,111 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>California Public Employee Salaries</title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cancer Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/cancer-page.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 
-<body>
     <!-- Header -->
     <div class="headerContainer">
 
-        <div class="headerLeft">
-            <img class="headerImg"
-                src="{{url_for('static', filename='images/Seal_of_University_of_California,_Berkeley.svg.png')}}"
-                alt="img">
-        </div>
+      <div class="headerLeft">
+        <img class="headerImg" src="../images/Seal_of_University_of_California,_Berkeley.svg.png" alt="img">
+      </div>
 
-        <div class="headerTitle">
-            <p>Public Employee Salaries</p>
-        </div>
+      <div class="headerTitle">
+        <p>Cancer Trends in America</p>
+      </div>
 
-        <div class="light/darkModes">
+      <div class="light/darkModes">
 
-        </div>
+      </div>
 
     </div>
 
     <!-- Sidebar -->
-    <div class="sidebarContainer">
+    <nav class="sidebarContainer">
+      <div class="sidebar-link">
+        <img src="../images/Feather-core-pie-chart.svg" alt="">
+        <!-- <div>Home</div> -->
+      </div>
 
-        <a href="home">
-            <div class="sidebar-link">
-                <img src="{{url_for('static', filename='images/Seal_of_University_of_California,_Berkeley.svg.png')}}" alt="Home">
-                <!-- <div>Title</div> -->
-            </div>
-        </a>
+      <div class="line"></div>
+    
+      <div class="sidebar-link">
+        <img src="../images/Feather-core-pie-chart.svg" alt="">
+        <!-- <div>Title</div> -->
+      </div>
+    
+      <div class="sidebar-link2">
+        <img src="../images/Feather-core-pie-chart.svg" alt="">
+        <!-- <div>Title</div> -->
+      </div>
+    
+      <div class="line"></div>
 
-        <a href="about-us">
-            <div class="sidebar-link">
-                <img src="{{url_for('static', filename='images/Feather-core-pie-chart.svg')}}" alt="about-us">
-                <!-- <div>Home</div> -->
-            </div>
-        </a>
+      <div class="sidebar-link">
+        <img src="../images/Feather-core-pie-chart.svg" alt="">
+        <!-- <div>Title</div> -->
+      </div>
+    
+      <div class="sidebar-link2">
+        <img src="../images/Feather-core-pie-chart.svg" alt="">
+        <!-- <div>Title</div> -->
+      </div>
 
-        <div class="line"></div>
-
-        <a href="overtime-pay">
-            <div class="sidebar-link">
-                <img src="{{url_for('static', filename='images/Seal_of_University_of_California,_Berkeley.svg.png')}}" alt="Overtime Pay">
-                <!-- <div>Title</div> -->
-            </div>
-        </a>
-
-
-
-        <a href="department-job">
-            <div class="sidebar-link">
-                <img src="{{url_for('static', filename='images/Seal_of_University_of_California,_Berkeley.svg.png')}}" alt="Department Job">
-                <!-- <div>Title</div> -->
-            </div>
-        </a>
-
-        <a href="city-comparison-dashboard">
-            <div class="sidebar-link">
-                <img src="{{url_for('static', filename='images/Seal_of_University_of_California,_Berkeley.svg.png')}}" alt="City Comparison Dashboard">
-                <!-- <div>Title</div> -->
-            </div>
-        </a>
-
-        <div class="line"></div>
-
-    </div>
+      <div class="line"></div>
+    
+      <div class="sidebar-link">
+        <img src="../images/Feather-core-pie-chart.svg" alt="">
+        <!-- <div>Title</div> -->
+      </div>
+    </nav>
 
     <!-- Content -->
     <div class="contentContainer">
-        <div class="contentArea">
+      <div class="contentArea">
 
-            <div class="contentTop">
-                <p class="contentTitle">Who Are We</p>
-            </div>
-
-            <div class="contentMid">
-                <!-- TODO: Implement Contact Card -->
-            </div>
-
-
-        </div>
-
+        <!-- Content Top -->
+        <div class="contentTop">
+          <p class="contentTitle">About Us</p>
+          We are a group of UC Berkeley Graduate students, visualizing Californai public data to help you understand where your tax dollars are going.
+          <!-- <img class="contentImg" src="" alt=""> -->
+          
+          <img src="{{url_for('static', filename='images/jesse.jpg')}}" class="image/"> 
+      </div>
+      
     </div>
-
-    <footer>
-        <div class="container">
-            <p>Copyright &copy; W209 Group 2</p>
-        </div>
-    </footer>
-
-    </script>
-
-
-</body>
-
+    
+  </body>
 </html>
