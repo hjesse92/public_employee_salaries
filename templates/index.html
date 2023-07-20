@@ -34,43 +34,33 @@
         </div>
         <div class="row">
             <div class="col-md-2 bg-light-subtle border-end">
+                <div class="container-fluid">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{url_for('index')}}">Home</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dashboards
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="{{url_for('state_level_view')}}">State Level View</a></li>
+                                <li><a class="dropdown-item" href="{{url_for('city_comparison_dashboard')}}">City Comparison Dashboard</a></li>
+                                <li><a class="dropdown-item" href="{{url_for('overtime_pay')}}">Overtime Pay Investigation</a></li>
+                                <li><a class="dropdown-item" href="{{url_for('department_job')}}">Salaries by Departments & Jobs</a></li>
 
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{url_for('index')}}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('about_us')}}">About Us</a>
-                    </li>
-                    <hr>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('state_level_view')}}">Visualize State Level Pays</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('department_job')}}">Visualize Salaries by Jobs &
-                            Departments</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('overtime_pay')}}">Visualize Overtime Pay</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('city_comparison_dashboard')}}">City Comparison
-                            Dashboard</a>
-                    </li>
-                </ul>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('about_us')}}">About Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="col-md-10">
-                <nav>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="breadcrumb-item active">
-                            <a href="#">Welcome</a>
-                        </li>
-                    </ol>
-                </nav>
+            <div class="gx col-md-10">
+                <br>
                 <div class="jumbotron">
                     <h2>
                         Intro Page

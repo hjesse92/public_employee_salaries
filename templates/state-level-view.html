@@ -18,7 +18,7 @@
 
     <div class="container-fluid m-auto">
         <div class="row text-bg-light border-bottom">
-            <div class="col-md-12">
+            <div class="col-lg-12">
                 <div class="page-header">
                     <div class="headerLeft">
                         <div class="headerImg">
@@ -39,77 +39,76 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="{{url_for('index')}}">Home</a>
                     </li>
+                    <hr>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dashboards
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="{{url_for('state_level_view')}}">State Level View</a></li>
+                            <li><a class="dropdown-item" href="{{url_for('city_comparison_dashboard')}}">City Comparison Dashboard</a></li>
+                            <li><a class="dropdown-item" href="{{url_for('overtime_pay')}}">Overtime Pay Investigation</a></li>
+                            <li><a class="dropdown-item" href="{{url_for('department_job')}}">Salaries by Departments & Jobs</a></li>
+
+                        </ul>
+                      </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url_for('about_us')}}">About Us</a>
                     </li>
-                    <hr>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('state_level_view')}}">Visualize State Level Pays</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('department_job')}}">Visualize Salaries by Jobs &
-                            Departments</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('overtime_pay')}}">Visualize Overtime Pay</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('city_comparison_dashboard')}}">City Comparison
-                            Dashboard</a>
-                    </li>
                 </ul>
+
             </div>
-            
+
             <div class="col-md-10">
-                <nav>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="#">Home</a>
+                <div class="container-fluid">
+                    <br>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{url_for('state_level_view')}}">State Level View</a>
                         </li>
-                        <li class="breadcrumb-item">
-                            <a href="#">Visualizations</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('city_comparison_dashboard')}}">City Comparison
+                                Dashboard</a>
                         </li>
-                        <li class="breadcrumb-item active">
-                            <a href="#">State Level View</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('department_job')}}">Salaries by Jobs & Departments</a>
                         </li>
-                    </ol>
-                </nav>
-                <div class="jumbotron">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('overtime_pay')}}">Overtime Pay</a>
+                        </li>
+                    </ul>
+                    <br>
                     <h2>
-                        State Level View of Public Employee Salaries
+                        State Level View of Public Employee Compensation
                     </h2>
-                    <p>
-                        Kolby to explain what this is
-                    </p>
-
-                </div>
-                <div class="h-25 row">
-                    <div class="col-md-12">
-                        <div class='tableauPlaceholder' id='viz1689667978883' style='position: relative'><noscript><a
-                                    href='#'><img alt='Dashboard 1 '
-                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;Final_Visual_16887872097320&#47;Dashboard1&#47;1_rss.png'
-                                        style='border: none' /></a></noscript><object class='tableauViz'
-                                style='display:none;'>
-                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                <param name='embed_code_version' value='3' />
-                                <param name='site_root' value='' />
-                                <param name='name' value='Final_Visual_16887872097320&#47;Dashboard1' />
-                                <param name='tabs' value='no' />
-                                <param name='toolbar' value='yes' />
-                                <param name='static_image'
-                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;Final_Visual_16887872097320&#47;Dashboard1&#47;1.png' />
-                                <param name='animate_transition' value='yes' />
-                                <param name='display_static_image' value='yes' />
-                                <param name='display_spinner' value='yes' />
-                                <param name='display_overlay' value='yes' />
-                                <param name='display_count' value='yes' />
-                                <param name='language' value='en-US' />
-                            </object></div>
-                        <script
-                            type='text/javascript'>                    var divElement = document.getElementById('viz1689667978883'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1127px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-                        <span class="badge badge-default">Label</span>
+                    <div class="contentText">View of average employee compensation by city or by county. Select an option in the Tableau dashboard below.</div>
+                    <div class="h-25 row">
+                        <div class="col-md-10">
+                            <div class='tableauPlaceholder' id='viz1689667978883' style='position: relative'><noscript><a
+                                href='#'><img alt='Dashboard 1 '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;Final_Visual_16887872097320&#47;Dashboard1&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Final_Visual_16887872097320&#47;Dashboard1' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;Final_Visual_16887872097320&#47;Dashboard1&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-US' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1689667978883'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1127px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
