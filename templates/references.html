@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>California Public Employee Salaries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/style.css')}}">
+</head>
+
+<body>
+
+    <div class="container-fluid m-auto">
+        <div class="row text-bg-light border-bottom">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <div class="headerLeft">
+                        <div class="headerImg">
+                            <img class="img-fluid"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/1200px-Seal_of_University_of_California%2C_Berkeley.svg.png">
+                        </div>
+                        <div class="headerTitle">
+                            California Public Employee Salaries
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 bg-light-subtle border-end">
+                <div class="container-fluid">
+                  <ul class="nav flex-column">
+                    <br>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="{{url_for('index')}}">Home</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Dashboards
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="{{url_for('state_level_view')}}">State Level View</a></li>
+                      <li><a class="dropdown-item" href="{{url_for('city_comparison_dashboard')}}">City Comparison
+                        Dashboard</a></li>
+                        <li><a class="dropdown-item" href="{{url_for('overtime_pay')}}">Overtime Pay Investigation</a></li>
+                        <li><a class="dropdown-item" href="{{url_for('department_job')}}">Salaries by Departments & Jobs</a>
+                        </li>
+                      </ul>
+                      <hr>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{url_for('references')}}">References</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{url_for('about_us')}}">About Us</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+            <div class="col-md-10">
+                <div class="container-fluid">
+
+                    <br>
+                    <h2>
+                        References
+                    </h2>
+                    <br>
+                    <div class="h-25 row">
+                        <div class="col-md-10">
+
+                            <p>This project was inspired from many sources of data and design.
+                                <br>
+                                <br>
+                                <a href="https://groups.ischool.berkeley.edu/CancerTrendsintheUS/index.html">Website
+                                    Design</a> was inspirated from Spring 2023 W209 Group
+                                <br>
+                                <a href="https://data.ca.gov/">California's Open Data</a> was the source of our primary
+                                dataset.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
 </head>
@@ -20,41 +20,49 @@
   <div class="container-fluid m-auto">
     <div class="row text-bg-light border-bottom sticky-top">
       <div class="col-md-12">
-        <!-- <div class="page-header"> -->
-        <div class="headerLeft">
-          <div class="headerImg">
-            <img class="img-fluid"
-              src="{{url_for('static', filename='images/Seal_of_University_of_California,_Berkeley.svg.png')}}">
+        <div class="row text-bg-light border-bottom">
+          <div class="col-md-12">
+              <div class="page-header">
+                  <div class="headerLeft">
+                      <div class="headerImg">
+                          <img class="img-fluid"
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/1200px-Seal_of_University_of_California%2C_Berkeley.svg.png">
+                      </div>
+                      <div class="headerTitle">
+                          California Public Employee Salaries
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="headerTitle">
-            California Public Employee Salaries
-          </div>
-          <!-- </div> -->
-        </div>
+      </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-2 bg-light-subtle border-end">
         <div class="container-fluid">
           <ul class="nav flex-column">
+            <br>
             <li class="nav-item">
               <a class="nav-link active" href="{{url_for('index')}}">Home</a>
             </li>
             <hr>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Dashboards
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="{{url_for('state_level_view')}}">State Level View</a></li>
-                <li><a class="dropdown-item" href="{{url_for('city_comparison_dashboard')}}">City Comparison
-                    Dashboard</a></li>
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Dashboards
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="{{url_for('state_level_view')}}">State Level View</a></li>
+              <li><a class="dropdown-item" href="{{url_for('city_comparison_dashboard')}}">City Comparison
+                Dashboard</a></li>
                 <li><a class="dropdown-item" href="{{url_for('overtime_pay')}}">Overtime Pay Investigation</a></li>
                 <li><a class="dropdown-item" href="{{url_for('department_job')}}">Salaries by Departments & Jobs</a>
                 </li>
-
               </ul>
+              <hr>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('references')}}">References</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{url_for('about_us')}}">About Us</a>
@@ -164,7 +172,7 @@
               </div>
               <div class="d-flex flex-between-center pt-4">
                 <p>
-                  Ipsum Lorem.
+                  Kolby is in his last term at UC Berkeley MIDS program.
                 </p>
               </div>
             </div>
@@ -231,7 +239,7 @@
                   </div>
                   <div class="col-12 col-sm-auto flex-1">
                     <h3>Josefina Ruggieri</h3>
-                    <p class="text-800">TITLE PLACEHOLDER</p>
+                    <p class="text-800">Equity Research Associate, D.A. Davidson</p>
                     <div><a class="me-2" href="#!"><svg class="svg-inline--fa fa-linkedin-in text-400 hover-primary"
                           aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
@@ -260,7 +268,7 @@
               </div>
               <div class="d-flex flex-between-center pt-4">
                 <p>
-                  Ipsum Lorem
+                  Josefina is in her second-to-last term of the UC-Berkeley MIDS program.
                 </p>
               </div>
             </div>

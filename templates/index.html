@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/style.css')}}">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                     <div class="headerLeft">
                         <div class="headerImg">
                             <img class="img-fluid"
-                                src="{{url_for('static', filename='images/Seal_of_University_of_California,_Berkeley.svg.png')}}">
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/1200px-Seal_of_University_of_California%2C_Berkeley.svg.png">
                         </div>
                         <div class="headerTitle">
                             California Public Employee Salaries
@@ -36,22 +36,32 @@
             <div class="col-md-2 bg-light-subtle border-end">
                 <div class="container-fluid">
                     <ul class="nav flex-column">
+                        <br>
                         <li class="nav-item">
                             <a class="nav-link active" href="{{url_for('index')}}">Home</a>
                         </li>
                         <hr>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Dashboards
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="{{url_for('state_level_view')}}">State Level View</a></li>
-                                <li><a class="dropdown-item" href="{{url_for('city_comparison_dashboard')}}">City Comparison Dashboard</a></li>
-                                <li><a class="dropdown-item" href="{{url_for('overtime_pay')}}">Overtime Pay Investigation</a></li>
-                                <li><a class="dropdown-item" href="{{url_for('department_job')}}">Salaries by Departments & Jobs</a></li>
+                                <li><a class="dropdown-item" href="{{url_for('state_level_view')}}">State Level View</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{url_for('city_comparison_dashboard')}}">City
+                                        Comparison Dashboard</a></li>
+                                <li><a class="dropdown-item" href="{{url_for('overtime_pay')}}">Overtime Pay
+                                        Investigation</a></li>
+                                <li><a class="dropdown-item" href="{{url_for('department_job')}}">Salaries by
+                                        Departments & Jobs</a></li>
 
                             </ul>
-                          </li>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('references')}}">References</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url_for('about_us')}}">About Us</a>
                         </li>
@@ -62,11 +72,16 @@
             <div class="gx col-md-10">
                 <br>
                 <div class="jumbotron">
+                    <br>
                     <h2>
-                        Intro Page
+                        W209 Summer Project
                     </h2>
+                    <br>
                     <p>
-                        What are we doing here?
+                        Hello, and welcome to our page! Here, you will be able to take a detailed look at governmental
+                        employee compensation in California across counties and departments. This page will take you
+                        from a high-level look at the state to an in-depth breakdown of the various roles. Let us know
+                        what you find enlightening!
                     </p>
 
                 </div>

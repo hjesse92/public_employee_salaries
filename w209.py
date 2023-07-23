@@ -35,5 +35,11 @@ def about_us():
     about_us_file="about-us.html"
     return render_template(about_us_file)
 
+@app.route("/references")
+def references():
+    about_us_file="references.html"
+    return render_template(about_us_file)
+
+
 if __name__ == "__main__":
    app.run(debug=True)
