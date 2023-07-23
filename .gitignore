@@ -1,3 +1,11 @@
 /__pycache__
 .DS_Store
 /backup
+/bin
+/flask_d3_example
+/lib
+/lib64
+*.db
+pyvenv.cfg
+/share
+.*
